@@ -1,8 +1,8 @@
 package com.example.universitynavigator
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
         val exitButton = findViewById<Button>(R.id.exitButton)
 
         searchUniversityButton.setOnClickListener {
-            Toast.makeText(this, R.string.search_coming_soon, Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, UniversityActivity::class.java)
+            startActivity(intent)
         }
 
         exitButton.setOnClickListener {

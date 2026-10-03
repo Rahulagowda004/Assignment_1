@@ -3,5 +3,14 @@
     <string name="main_title">University Navigator</string>
     <string name="search_university">Search University</string>
     <string name="exit">Exit</string>
-    <string name="search_coming_soon">University list coming soon</string>
+
+    <string name="select_university_title">Select a University</string>
+    <string name="university_guelph">University of Guelph</string>
+    <string name="university_waterloo">University of Waterloo</string>
+    <string name="university_toronto">University of Toronto</string>
+    <string name="university_mcmaster">McMaster University</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="select_university_first">Please select a university</string>
+    <string name="university_selected">Selected: %1$s</string>
 </resources>
