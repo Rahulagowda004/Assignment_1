@@ -15,5 +15,13 @@
 
     <string name="select_department_title">Select a Department</string>
     <string name="select_department_first">Please select a department</string>
-    <string name="department_selected">Selected: %1$s, %2$s</string>
+
+    <string name="professor_title">Professor Details</string>
+    <string name="label_university">University</string>
+    <string name="label_department">Department</string>
+    <string name="label_professor">Professor</string>
+    <string name="view_on_maps">View Department on Google Maps</string>
+    <string name="view_professor_website">View Professor Website</string>
+    <string name="maps_coming_soon">Google Maps will open here (next step)</string>
+    <string name="website_coming_soon">Professor website will open here (next step)</string>
 </resources>

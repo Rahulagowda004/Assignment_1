@@ -1,5 +1,6 @@
 package com.example.universitynavigator
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -45,10 +46,10 @@ class DepartmentActivity : AppCompatActivity() {
         universityNameText.text = universityName
 
         val departments = UniversityData.departmentsByUniversity[universityIndex]
-        for (departmentName in departments) {
+        for (department in departments) {
             val radioButton = RadioButton(this)
             radioButton.id = View.generateViewId()
-            radioButton.text = departmentName
+            radioButton.text = department.name
             radioButton.textSize = 18f
             radioButton.setPadding(16, 16, 16, 16)
             departmentRadioGroup.addView(radioButton)
@@ -69,18 +70,12 @@ class DepartmentActivity : AppCompatActivity() {
             val departmentIndex = departmentRadioGroup.indexOfChild(selectedButton)
             val departmentName = selectedButton.text.toString()
 
-            // TODO (next step): start ProfessorActivity with these extras:
-            // val intent = Intent(this, ProfessorActivity::class.java)
-            // intent.putExtra(UniversityActivity.EXTRA_UNIVERSITY_INDEX, universityIndex)
-            // intent.putExtra(UniversityActivity.EXTRA_UNIVERSITY_NAME, universityName)
-            // intent.putExtra(EXTRA_DEPARTMENT_INDEX, departmentIndex)
-            // intent.putExtra(EXTRA_DEPARTMENT_NAME, departmentName)
-            // startActivity(intent)
-            Toast.makeText(
-                this,
-                getString(R.string.department_selected, departmentName, universityName),
-                Toast.LENGTH_SHORT
-            ).show()
+            val intent = Intent(this, ProfessorActivity::class.java)
+            intent.putExtra(UniversityActivity.EXTRA_UNIVERSITY_INDEX, universityIndex)
+            intent.putExtra(UniversityActivity.EXTRA_UNIVERSITY_NAME, universityName)
+            intent.putExtra(EXTRA_DEPARTMENT_INDEX, departmentIndex)
+            intent.putExtra(EXTRA_DEPARTMENT_NAME, departmentName)
+            startActivity(intent)
         }
     }
 }

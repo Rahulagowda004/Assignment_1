@@ -1,36 +1,41 @@
 package com.example.universitynavigator
 
+data class Department(
+    val name: String,
+    val professorName: String
+)
+
 object UniversityData {
 
     // Must stay in the same order as the radio buttons in activity_university.xml
-    val departmentsByUniversity: List<List<String>> = listOf(
+    val departmentsByUniversity: List<List<Department>> = listOf(
         // University of Guelph
         listOf(
-            "School of Computer Science",
-            "School of Engineering",
-            "Department of Physics",
-            "Department of Mathematics and Statistics"
+            Department("School of Computer Science", "Dr. Stefan Kremer"),
+            Department("School of Engineering", "Dr. Petros Spachos"),
+            Department("Department of Physics", "Dr. Paul Garrett"),
+            Department("Department of Mathematics and Statistics", "Dr. Hermann Eberl")
         ),
         // University of Waterloo
         listOf(
-            "Cheriton School of Computer Science",
-            "Electrical and Computer Engineering",
-            "Mechanical and Mechatronics Engineering",
-            "Civil and Environmental Engineering"
+            Department("Cheriton School of Computer Science", "Dr. Ian Goldberg"),
+            Department("Electrical and Computer Engineering", "Dr. Catherine Rosenberg"),
+            Department("Mechanical and Mechatronics Engineering", "Dr. Kevin Musselman"),
+            Department("Civil and Environmental Engineering", "Dr. Mahesh Pandey")
         ),
         // University of Toronto
         listOf(
-            "Department of Computer Science",
-            "Electrical and Computer Engineering",
-            "Mechanical and Industrial Engineering",
-            "Department of Physics"
+            Department("Department of Computer Science", "Dr. Sheila McIlraith"),
+            Department("Electrical and Computer Engineering", "Dr. Deepa Kundur"),
+            Department("Mechanical and Industrial Engineering", "Dr. Mark Fox"),
+            Department("Department of Physics", "Dr. Aephraim Steinberg")
         ),
         // McMaster University
         listOf(
-            "Department of Computing and Software",
-            "Electrical and Computer Engineering",
-            "Department of Mechanical Engineering",
-            "Department of Chemical Engineering"
+            Department("Department of Computing and Software", "Dr. Ryszard Janicki"),
+            Department("Electrical and Computer Engineering", "Dr. Ali Emadi"),
+            Department("Department of Mechanical Engineering", "Dr. Stephen Veldhuis"),
+            Department("Department of Chemical Engineering", "Dr. Shiping Zhu")
         )
     )
 }
