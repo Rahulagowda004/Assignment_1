@@ -12,5 +12,8 @@
     <string name="back">Back</string>
     <string name="next">Next</string>
     <string name="select_university_first">Please select a university</string>
-    <string name="university_selected">Selected: %1$s</string>
+
+    <string name="select_department_title">Select a Department</string>
+    <string name="select_department_first">Please select a department</string>
+    <string name="department_selected">Selected: %1$s, %2$s</string>
 </resources>

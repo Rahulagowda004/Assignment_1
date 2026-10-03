@@ -1,5 +1,6 @@
 package com.example.universitynavigator
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
@@ -46,16 +47,10 @@ class UniversityActivity : AppCompatActivity() {
             val universityIndex = universityRadioGroup.indexOfChild(selectedButton)
             val universityName = selectedButton.text.toString()
 
-            // TODO (next step): start DepartmentActivity with these extras:
-            // val intent = Intent(this, DepartmentActivity::class.java)
-            // intent.putExtra(EXTRA_UNIVERSITY_INDEX, universityIndex)
-            // intent.putExtra(EXTRA_UNIVERSITY_NAME, universityName)
-            // startActivity(intent)
-            Toast.makeText(
-                this,
-                getString(R.string.university_selected, universityName),
-                Toast.LENGTH_SHORT
-            ).show()
+            val intent = Intent(this, DepartmentActivity::class.java)
+            intent.putExtra(EXTRA_UNIVERSITY_INDEX, universityIndex)
+            intent.putExtra(EXTRA_UNIVERSITY_NAME, universityName)
+            startActivity(intent)
         }
     }
 }
