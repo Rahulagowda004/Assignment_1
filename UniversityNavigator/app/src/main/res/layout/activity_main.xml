@@ -2,6 +2,7 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="University Navigator"
+        android:text="@string/main_title"
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_marginBottom="40dp"/>
@@ -20,13 +21,13 @@
         android:id="@+id/searchUniversityButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Search University"/>
+        android:text="@string/search_university"/>
 
     <Button
         android:id="@+id/exitButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Exit"
+        android:text="@string/exit"
         android:layout_marginTop="16dp"/>
 
 </LinearLayout>

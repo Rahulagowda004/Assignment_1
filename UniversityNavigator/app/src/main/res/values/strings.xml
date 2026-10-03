@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">UniversityNavigator</string>
+    <string name="main_title">University Navigator</string>
+    <string name="search_university">Search University</string>
+    <string name="exit">Exit</string>
+    <string name="search_coming_soon">University list coming soon</string>
 </resources>
