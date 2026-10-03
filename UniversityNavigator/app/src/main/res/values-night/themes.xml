@@ -1,7 +1,4 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.UniversityNavigator" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-    </style>
+    <!-- Same light base as values/themes.xml so dark-mode devices keep the university palette -->
+    <style name="Base.Theme.UniversityNavigator" parent="Theme.Material3.Light.NoActionBar" />
 </resources>

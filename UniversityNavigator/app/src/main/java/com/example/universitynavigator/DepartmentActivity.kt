@@ -47,11 +47,11 @@ class DepartmentActivity : AppCompatActivity() {
 
         val departments = UniversityData.departmentsByUniversity[universityIndex]
         for (department in departments) {
-            val radioButton = RadioButton(this)
+            val radioButton = layoutInflater.inflate(
+                R.layout.item_department_option, departmentRadioGroup, false
+            ) as RadioButton
             radioButton.id = View.generateViewId()
             radioButton.text = department.name
-            radioButton.textSize = 18f
-            radioButton.setPadding(16, 16, 16, 16)
             departmentRadioGroup.addView(radioButton)
         }
 

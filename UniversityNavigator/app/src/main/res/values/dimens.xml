@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding_horizontal">24dp</dimen>
+    <dimen name="screen_padding_vertical">24dp</dimen>
+
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_m">12dp</dimen>
+    <dimen name="space_l">16dp</dimen>
+    <dimen name="space_xl">24dp</dimen>
+    <dimen name="space_xxl">32dp</dimen>
+
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="option_min_height">56dp</dimen>
+    <dimen name="corner_radius">12dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="header_icon_size">96dp</dimen>
+    <dimen name="header_icon_padding">22dp</dimen>
+    <dimen name="accent_bar_width">48dp</dimen>
+    <dimen name="accent_bar_height">4dp</dimen>
+</resources>

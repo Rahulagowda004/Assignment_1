@@ -1,10 +1,16 @@
 <resources>
-    <string name="app_name">UniversityNavigator</string>
+    <string name="app_name">University Navigator</string>
     <string name="main_title">University Navigator</string>
+    <string name="main_subtitle">Find a professor in 3 easy steps: choose a university, pick a department, and connect.</string>
     <string name="search_university">Search University</string>
     <string name="exit">Exit</string>
 
+    <string name="step_1">Step 1 of 3</string>
+    <string name="step_2">Step 2 of 3</string>
+    <string name="step_3">Step 3 of 3</string>
+
     <string name="select_university_title">Select a University</string>
+    <string name="select_university_hint">Choose one university to see its departments.</string>
     <string name="university_guelph">University of Guelph</string>
     <string name="university_waterloo">University of Waterloo</string>
     <string name="university_toronto">University of Toronto</string>
@@ -13,13 +19,16 @@
     <string name="next">Next</string>
     <string name="select_university_first">Please select a university</string>
 
-    <string name="select_department_title">Select a Department</string>
+    <string name="departments_at">Departments at</string>
+    <string name="select_department_hint">Choose one department to meet one of its professors.</string>
     <string name="select_department_first">Please select a department</string>
 
     <string name="professor_title">Professor Details</string>
+    <string name="professor_hint">Here is a professor from your selected department.</string>
     <string name="label_university">University</string>
     <string name="label_department">Department</string>
     <string name="label_professor">Professor</string>
+    <string name="actions_title">Actions</string>
     <string name="view_on_maps">View Department on Google Maps</string>
     <string name="view_professor_website">View Professor Website</string>
     <string name="no_maps_app">No app found to show the map</string>
